@@ -23,4 +23,4 @@ steps:
       repo: felherlla/hello-world
       tags:
         - latest
-        - 0.1
+        - 0.2
