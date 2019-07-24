@@ -20,7 +20,7 @@ steps:
         from_secret: dockerhub.user
       password:
         from_secret: dockerhub.password
-      repo: felherlla/hello-world
+      repo: faproject/droneci-test
       tags:
         - latest
-        - 0.2
+        - 0.0.1
