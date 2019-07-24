@@ -6,3 +6,4 @@ steps:
     image: maven:3.6.1-jdk-11-slim
     commands:
       - mvn clean package
+      - ls -R
