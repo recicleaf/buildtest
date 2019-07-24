@@ -15,6 +15,8 @@ public class AppRouter {
     @Bean
     RouterFunction<ServerResponse> updateEmployeeRoute() {
         return RouterFunctions.route(RequestPredicates.GET("/hello"),
-                                     request -> ok().syncBody("Hello World!"));
+                                     request -> ok().syncBody("Hello World!"))
+                              .andRoute(RequestPredicates.GET("/hello2"),
+                                        request -> ok().syncBody("Hello World 2!"));
     }
 }
