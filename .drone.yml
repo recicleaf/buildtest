@@ -16,8 +16,10 @@ steps:
   - name: bake
     image: plugins/docker
     settings:
-      username: felherlla
-      password: 6jN3MGunnUE6uiT
+      username:
+        from_secret: dockerhub.user
+      password:
+        from_secret: dockerhub.password
       repo: felherlla/hello-world
       tags:
         - latest
