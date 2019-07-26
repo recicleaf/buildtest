@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: hello-wrold
+
+name: Hello <>
+
+---
+
+spring:
+  profiles: development
+
+name: Hello <dev>
+
+---
+
+spring:
+  profiles: staging
+
+name: Hello <sta>
